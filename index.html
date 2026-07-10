@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Golden Fusion Enterprise, LLC develops practical digital products designed to solve everyday problems.">
+  <title>Golden Fusion Enterprise, LLC</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Golden Fusion Enterprise home">
+        <span class="brand-mark" aria-hidden="true">GF</span>
+        <span>Golden Fusion Enterprise</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">Golden Fusion Enterprise, LLC</p>
+        <h1>Practical ideas.<br>Purpose-built products.</h1>
+        <p class="hero-copy">We develop focused digital products designed to make everyday situations simpler, smoother, and more manageable.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#products">View our products</a>
+          <a class="button secondary" href="mailto:bruce@goldenfusion.us">Contact us</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container split">
+        <div>
+          <p class="section-label">About</p>
+          <h2>Built around useful solutions.</h2>
+        </div>
+        <div class="body-copy">
+          <p>Golden Fusion Enterprise, LLC is an independent product company focused on developing straightforward tools for real-world needs.</p>
+          <p>Each product is developed as a distinct business unit under the Golden Fusion Enterprise umbrella, with its own purpose, identity, and customer experience.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section products-section">
+      <div class="container">
+        <p class="section-label">Products</p>
+        <h2>Our first product</h2>
+        <article class="product-card">
+          <div class="product-copy">
+            <p class="product-kicker">In development</p>
+            <h3>I GOTTA TAKE THIS</h3>
+            <p>A discreet mobile experience designed to help people create a believable, well-timed reason to step away from an uncomfortable or inconvenient situation.</p>
+            <a class="text-link" href="https://igottatakethis.com">Visit I GOTTA TAKE THIS <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="product-monogram" aria-hidden="true">IGTT</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-card">
+        <div>
+          <p class="section-label">Contact</p>
+          <h2>Connect with Golden Fusion Enterprise.</h2>
+        </div>
+        <a class="button primary" href="mailto:bruce@goldenfusion.us">bruce@goldenfusion.us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Golden Fusion Enterprise, LLC. All rights reserved.</p>
+      <p>United States</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
