@@ -1,2 +1,2 @@
 # goldenfusion-site
-Home site for Golden Fusion Enterprises, LLC
+Home site for Golden Fusion Enterprise, LLC
