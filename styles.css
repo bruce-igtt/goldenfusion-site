@@ -113,52 +113,14 @@ p {
     color: inherit;
 }
 
-.logo-box {
+.logo-image {
 
-    width: 56px;
+    height: 70px;
 
-    height: 56px;
+    width: auto;
 
-    border-radius: 12px;
-
-    background: linear-gradient(135deg,#d4af37,#8b6a14);
-
-    color: white;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    font-weight: bold;
-
-    margin-right: 14px;
-
-    font-size: 1.1rem;
+    display: block;
 }
-
-.logo-text {
-
-    display: flex;
-
-    flex-direction: column;
-}
-
-.company-name {
-
-    font-weight: 700;
-
-    color: #222;
-}
-
-.company-tagline {
-
-    font-size: .82rem;
-
-    color: #777;
-}
-
 /* ---------- Navigation ---------- */
 
 nav ul {
