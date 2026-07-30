@@ -152,8 +152,12 @@ nav a:hover {
 /* ---------- Hero ---------- */
 
 .hero {
-
     padding: 7rem 0;
+    background: linear-gradient(
+        to bottom,
+        #ffffff,
+        #faf9f5
+    );
 }
 
 .hero-grid {
@@ -183,31 +187,13 @@ nav a:hover {
     margin-top: 2rem;
 }
 
-.hero-placeholder {
-
-    height: 430px;
-
-    border-radius: 28px;
-
-    background:
-        linear-gradient(145deg,#f7f7f7,#ececec);
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    flex-direction: column;
-
-    font-size: 2.4rem;
-
-    font-weight: 700;
-
-    color: #666;
-
-    box-shadow:
-        0 25px 60px rgba(0,0,0,.08);
+.hero-banner {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    display: block;
+    margin: auto;
+    filter: drop-shadow(0 20px 35px rgba(0,0,0,.18));
 }
 
 .hero-placeholder span {
