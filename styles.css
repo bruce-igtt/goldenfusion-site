@@ -1,5 +1,4 @@
 /* ==========================================================
-   Project Fusion V2
    Golden Fusion Enterprises
    styles.css
 ========================================================== */
@@ -11,6 +10,7 @@
     padding:0;
     box-sizing:border-box;
 }
+
 html{
     scroll-behavior:smooth;
 }
@@ -18,16 +18,16 @@ html{
 body{
     font-family:-apple-system,BlinkMacSystemFont,
     "Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    color:#222;
     background:#fff;
+    color:#222;
     line-height:1.7;
 }
 
-/* ---------- Containers ---------- */
+/* ---------- Layout ---------- */
 
 .container{
     width:min(1180px,92%);
-    margin:auto;
+    margin:0 auto;
 }
 
 /* ---------- Typography ---------- */
@@ -45,7 +45,7 @@ h2{
 }
 
 h3{
-    font-size:1.6rem;
+    font-size:1.5rem;
     margin-bottom:.8rem;
 }
 
@@ -59,9 +59,9 @@ p{
     text-transform:uppercase;
     letter-spacing:3px;
     color:#caa438;
+    font-size:.85rem;
     font-weight:700;
     margin-bottom:1rem;
-    font-size:.85rem;
 }
 
 /* ---------- Header ---------- */
@@ -81,10 +81,10 @@ p{
 
 nav ul{
     display:flex;
-    list-style:none;
-    gap:3rem;
     justify-content:center;
     align-items:center;
+    gap:3rem;
+    list-style:none;
 }
 
 nav a{
@@ -98,18 +98,17 @@ nav a:hover{
     color:#d4af37;
 }
 
-/* ---------- Hero Banner ---------- */
+/* ---------- Banner ---------- */
 
 .hero{
-    padding:2rem 0 1rem;
-    text-align:center;
     background:#fff;
+    text-align:center;
+    padding:2rem 0 1rem;
 }
 
 .hero-image{
     display:flex;
     justify-content:center;
-    align-items:center;
 }
 
 .hero-banner{
@@ -124,7 +123,7 @@ nav a:hover{
 
 .intro{
     text-align:center;
-    padding:4rem 0 5rem;
+    padding:4rem 0 6rem;
 }
 
 .intro .container{
@@ -133,15 +132,16 @@ nav a:hover{
 
 .hero-description{
     font-size:1.2rem;
-    max-width:650px;
+    line-height:1.8;
+    max-width:700px;
     margin:0 auto;
 }
 
 .hero-buttons{
     display:flex;
     justify-content:center;
-    gap:1rem;
-    margin-top:2rem;
+    gap:1.25rem;
+    margin-top:2.5rem;
     flex-wrap:wrap;
 }
 
@@ -149,20 +149,20 @@ nav a:hover{
 
 .button{
     display:inline-block;
-    padding:.95rem 1.8rem;
+    padding:1rem 2rem;
     border-radius:10px;
     text-decoration:none;
     font-weight:700;
-    transition:.25s;
+    transition:.25s ease;
 }
 
 .button.primary{
     background:#d4af37;
-    color:white;
+    color:#fff;
 }
 
 .button.primary:hover{
-    background:#b99224;
+    background:#bb9727;
     transform:translateY(-2px);
 }
 
@@ -173,7 +173,7 @@ nav a:hover{
 
 .button.secondary:hover{
     background:#d4af37;
-    color:white;
+    color:#fff;
 }
 
 /* ---------- Sections ---------- */
@@ -181,20 +181,32 @@ nav a:hover{
 .section,
 .products,
 .contact{
-    padding:6rem 0;
+    padding:5rem 0;
 }
 
 .section-heading{
-    max-width:700px;
-    margin-bottom:3rem;
+    max-width:900px;
+    margin:0 auto 2.5rem;
+    text-align:center;
+}
+
+.section-heading p{
+    margin:0 auto;
 }
 
 /* ---------- About ---------- */
 
-.about-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:4rem;
+.about-text{
+    max-width:900px;
+    margin:0 auto;
+}
+
+.about-text p{
+    text-align:center;
+    font-size:1.15rem;
+    line-height:1.9;
+    color:#555;
+    margin:0 auto;
 }
 
 /* ---------- Products ---------- */
@@ -203,94 +215,115 @@ nav a:hover{
     background:#fafafa;
 }
 
+.products .section-heading{
+    text-align:center;
+}
+
 .product-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
     gap:2rem;
 }
 
 .product-card{
-    background:white;
+    background:#fff;
     border-radius:22px;
     padding:2rem;
     box-shadow:0 12px 40px rgba(0,0,0,.05);
-    transition:.3s;
+    transition:.3s ease;
+    text-align:left;
 }
 
 .product-card:hover{
     transform:translateY(-8px);
-    box-shadow:0 18px 45px rgba(0,0,0,.10);
+    box-shadow:0 20px 45px rgba(0,0,0,.10);
 }
 
 .product-image{
     height:160px;
-    background:linear-gradient(135deg,#d4af37,#6d5310);
-    color:white;
     display:flex;
     justify-content:center;
     align-items:center;
-    border-radius:18px;
-    font-size:2rem;
     margin-bottom:2rem;
+    border-radius:18px;
+    background:linear-gradient(135deg,#d4af37,#6d5310);
+    color:#fff;
+    font-size:2rem;
     font-weight:700;
-}
-
-.product-status{
-    color:#caa438;
-    font-weight:700;
-    text-transform:uppercase;
-    font-size:.8rem;
-}
-
-.coming-soon{
-    display:inline-block;
-    padding:.45rem .8rem;
-    border-radius:999px;
-    background:#f3f3f3;
-    color:#777;
-    margin-bottom:1rem;
-    font-size:.8rem;
-    font-weight:600;
 }
 
 .featured{
     border-top:6px solid #d4af37;
 }
 
+.coming-soon{
+    display:inline-block;
+    margin-bottom:1rem;
+    padding:.45rem .9rem;
+    border-radius:999px;
+    background:#f2f2f2;
+    color:#777;
+    font-size:.8rem;
+    font-weight:600;
+}
+
+.product-status{
+    color:#caa438;
+    text-transform:uppercase;
+    font-size:.8rem;
+    font-weight:700;
+}
+
+/* ---------- FAQ ---------- */
+
+#faq{
+    text-align:center;
+}
+
+#faq p{
+    max-width:900px;
+    margin:0 auto 2rem;
+}
+
 /* ---------- Contact ---------- */
 
 .contact{
-    text-align:center;
     background:#111;
-    color:white;
+    color:#fff;
+    text-align:center;
+}
+
+.contact .container{
+    max-width:900px;
 }
 
 .contact p{
-    color:#d6d6d6;
-    max-width:650px;
+    max-width:700px;
     margin:1rem auto 2rem;
+    color:#d5d5d5;
 }
 
 /* ---------- Footer ---------- */
 
 footer{
     background:#0b0b0b;
-    color:white;
+    color:#fff;
 }
 
 .footer{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:3rem 0;
     flex-wrap:wrap;
     gap:2rem;
+    padding:3rem 0;
 }
 
 .footer a{
-    color:#ccc;
     text-decoration:none;
+    color:#ccc;
     margin-left:1rem;
+    transition:.25s;
 }
 
 .footer a:hover{
@@ -300,26 +333,35 @@ footer{
 .copyright{
     text-align:center;
     color:#777;
+    font-size:.85rem;
     padding:1.5rem;
     border-top:1px solid #222;
-    font-size:.85rem;
 }
 
 /* ---------- Responsive ---------- */
 
 @media (max-width:900px){
 
-    .about-grid{
-        grid-template-columns:1fr;
-    }
-
     nav ul{
         flex-wrap:wrap;
-        gap:1.25rem;
+        gap:1.5rem;
     }
 
     .intro{
-        padding:3rem 0;
+        padding:3rem 0 4rem;
+    }
+
+    .hero-description{
+        font-size:1.1rem;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .product-grid{
+        grid-template-columns:1fr;
     }
 
     .footer{
