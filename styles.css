@@ -191,13 +191,20 @@ nav a:hover{
 }
 
 /* ---------- About ---------- */
-
-.about-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:4rem;
+.section-heading.centered{
+    text-align:center;
+    margin:0 auto 3rem;
 }
-
+.about-text{
+    max-width:950px;
+    margin:0 auto;
+}
+.about-text p{
+    font-size:1.15rem;
+    line-height:2;
+    text-align:left;
+    color:#555;
+}
 /* ---------- Products ---------- */
 
 .products{
