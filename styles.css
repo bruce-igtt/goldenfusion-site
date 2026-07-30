@@ -54,18 +54,17 @@ p {
 }
 /* ---------- Header ---------- */
 .site-header {
-    position: sticky;
-    top: 0;
-    background: rgba(255,255,255,.92);
-    backdrop-filter: blur(18px);
+    position: static;
+    background: white;
+    border-top: 1px solid #ececec;
     border-bottom: 1px solid #ececec;
-    z-index: 1000;
 }
 .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     padding: 1rem 0;
+}
+nav ul {
+    gap: 3rem;
 }
 /* ---------- Logo ---------- */
 .logo {
@@ -97,12 +96,13 @@ nav a:hover {
 }
 /* ---------- Hero ---------- */
 .hero {
-    padding: 7rem 0;
-    background: linear-gradient(
-        to bottom,
-        #ffffff,
-        #faf9f5
-    );
+    padding: 2rem 0 1rem;
+    text-align: center;
+    background: white;
+}
+.hero-banner {
+    max-width: 950px;
+    width: 100%;
 }
 .hero-grid {
     display: grid;
