@@ -374,3 +374,223 @@ footer{
     }
 
 }
+
+/* ---------- App guide campaign ---------- */
+
+.guide-ad{
+    background:#171714;
+    border-bottom:3px solid #d4af37;
+    color:#fff;
+}
+
+.guide-ad-inner{
+    min-height:86px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:1.4rem;
+    padding:1rem 0;
+}
+
+.guide-ad-tag{
+    flex:none;
+    border:1px solid rgba(212,175,55,.75);
+    border-radius:999px;
+    padding:.42rem .76rem;
+    color:#f3d67b;
+    font-size:.72rem;
+    font-weight:800;
+    letter-spacing:.11em;
+    white-space:nowrap;
+}
+
+.guide-ad p{
+    color:#fff;
+    font-size:clamp(1.02rem,2vw,1.35rem);
+    font-weight:750;
+    line-height:1.25;
+    margin:0;
+}
+
+.guide-ad-link{
+    flex:0 1 auto;
+    display:inline-flex;
+    align-items:center;
+    gap:.6rem;
+    border-radius:8px;
+    padding:.72rem 1.1rem;
+    background:#d4af37;
+    color:#171714;
+    font-weight:800;
+    text-decoration:none;
+    text-align:center;
+    transition:background .2s,transform .2s;
+}
+
+.guide-ad-link:hover,
+.guide-ad-link:focus-visible{
+    background:#f0cf66;
+    transform:translateY(-2px);
+}
+
+.nav-guide{
+    color:#765900;
+    border-bottom:2px solid #d4af37;
+    padding-bottom:.2rem;
+}
+
+.guide-feature{
+    padding:5rem 0;
+    background:#1b292d;
+    color:#fff;
+}
+
+.guide-feature-grid{
+    display:grid;
+    grid-template-columns:minmax(0,1.25fr) minmax(300px,.75fr);
+    align-items:center;
+    gap:clamp(2rem,6vw,6rem);
+}
+
+.guide-feature h2{
+    max-width:650px;
+}
+
+.guide-feature p:not(.section-label){
+    color:#e0e8e8;
+    max-width:620px;
+    font-size:1.08rem;
+}
+
+.guide-feature .button.primary,
+.guide-page-hero .button.primary,
+.guide-purchase .button.primary{
+    color:#171714;
+}
+
+.guide-feature-card{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    min-height:330px;
+    padding:2.5rem;
+    border:1px solid rgba(234,206,111,.55);
+    border-radius:20px;
+    background:linear-gradient(145deg,#25251d,#0e181c);
+    box-shadow:22px 24px 0 rgba(212,175,55,.15);
+}
+
+.guide-feature-kicker,
+.guide-cover-kicker{
+    color:#e8c860;
+    font-size:.7rem;
+    font-weight:800;
+    letter-spacing:.17em;
+}
+
+.guide-feature-card strong{
+    color:#fff;
+    font-size:clamp(1.65rem,3vw,2.25rem);
+    line-height:1.15;
+    margin:2rem 0 1rem;
+}
+
+.guide-feature-card>span:nth-of-type(2){color:#d7dfdf;}
+.guide-feature-price{color:#f0cd62;font-size:1.7rem;font-weight:800;margin-top:1.5rem;}
+
+.guide-site-header .nav-container{
+    justify-content:space-between;
+    gap:2rem;
+}
+
+.guide-site-logo{display:block;width:min(330px,44vw);height:auto;}
+
+.guide-page-hero{
+    padding:clamp(3.5rem,7vw,6rem) 0;
+    background:linear-gradient(130deg,#f9f6ed,#fff 62%);
+}
+
+.guide-page-grid{
+    display:grid;
+    grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr);
+    align-items:center;
+    gap:clamp(2rem,6vw,6rem);
+}
+
+.guide-page-hero h1{font-size:clamp(2.6rem,5vw,4.5rem);max-width:800px;}
+.guide-page-hero .lead{font-size:1.23rem;max-width:650px;}
+.guide-page-hero .hero-buttons{justify-content:flex-start;gap:.7rem;margin-top:1.7rem;}
+.guide-page-hero .button.secondary{background:#fff;}
+.guide-page-hero .fine-print{font-size:.88rem;margin-top:1rem;}
+
+.guide-cover{
+    min-height:430px;
+    display:flex;
+    flex-direction:column;
+    padding:2.5rem;
+    border-radius:12px;
+    background:#17374a;
+    box-shadow:18px 20px 0 #d4af37,0 24px 55px rgba(0,0,0,.16);
+    transform:rotate(2deg);
+}
+
+.guide-cover strong{color:#fff;font-size:clamp(2.1rem,3.4vw,3rem);line-height:1.15;margin:3rem 0 1.5rem;}
+.guide-cover span:last-child{margin-top:auto;color:#c5d7dc;}
+
+.guide-proof{
+    background:#1b292d;
+    color:#fff;
+    padding:1.5rem 0;
+}
+
+.guide-proof .container{display:flex;justify-content:space-between;gap:1.4rem;flex-wrap:wrap;}
+.guide-proof span{font-size:.95rem;font-weight:650;}
+
+.guide-page-section{padding:5rem 0;}
+.guide-page-section.alt{background:#f8f8f5;}
+.guide-page-section .section-heading{text-align:left;margin:0 0 2.5rem;}
+.guide-steps,.guide-requirements{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem;}
+.guide-step,.guide-requirement{background:#fff;border:1px solid #e5e5df;border-radius:16px;padding:1.6rem;}
+.guide-step-number{color:#a77d11;font-size:.8rem;font-weight:800;letter-spacing:.15em;}
+.guide-step h3,.guide-requirement h3{margin:.8rem 0 .5rem;}
+.guide-step p,.guide-requirement p{margin:0;}
+
+.guide-purchase{
+    border-radius:22px;
+    background:#1b292d;
+    color:#fff;
+    padding:clamp(2rem,5vw,4rem);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:2rem;
+}
+.guide-purchase h2{max-width:620px;}
+.guide-purchase p{color:#dce5e5;max-width:620px;margin-bottom:0;}
+.guide-purchase-action{flex:none;text-align:center;}
+.guide-purchase-price{display:block;color:#efcf6a;font-size:2.6rem;font-weight:800;line-height:1.1;margin-bottom:1rem;}
+.guide-purchase-action small{display:block;color:#dce5e5;margin-top:.8rem;max-width:240px;}
+
+.guide-faq{max-width:850px;}
+.guide-faq details{padding:1.15rem 0;border-bottom:1px solid #ddd;}
+.guide-faq summary{cursor:pointer;font-weight:750;font-size:1.06rem;}
+.guide-faq p{margin:.7rem 0 0;}
+.guide-support{margin-top:2rem;}
+
+@media (max-width:900px){
+    .guide-ad-inner{flex-wrap:wrap;justify-content:space-between;gap:.75rem;}
+    .guide-ad p{order:-1;width:100%;}
+    .guide-feature-grid,.guide-page-grid{grid-template-columns:1fr;}
+    .guide-cover{max-width:420px;margin:1rem auto;}
+    .guide-site-header .nav-container{flex-direction:column;}
+}
+
+@media (max-width:600px){
+    .guide-ad-inner{padding:.9rem 0;}
+    .guide-ad-tag{font-size:.65rem;}
+    .guide-ad-link{font-size:.85rem;padding:.65rem .8rem;}
+    .guide-feature,.guide-page-section{padding:3.5rem 0;}
+    .guide-steps,.guide-requirements{grid-template-columns:1fr;}
+    .guide-purchase{flex-direction:column;align-items:flex-start;}
+    .guide-purchase-action{text-align:left;}
+}
